@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title": "Popular Restaurants Near You",
+    "subtitle": "Discover the best dining experiences in your area. View menus and book your table in seconds."
+  },
+  "restaurant": {
+    "id": "rest_001",
+    "name": "Spice Garden",
+    "description": "A modern multi-cuisine restaurant serving authentic Indian and continental dishes.",
+    "type": "Dine-In | Takeaway | Delivery",
+    "rating": 4.5,
+    "contact": {
+      "phone": "+91 9876543210",
+      "email": "contact@spicegarden.com"
+    },
+    "address": {
+      "street": "12th Cross Road",
+      "area": "Indiranagar",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pincode": "560038",
+      "country": "India"
+    },
+    "openingHours": {
+      "mondayToFriday": "10:00 AM - 11:00 PM",
+      "weekends": "9:00 AM - 12:00 AM"
+    },
+    "gstNumber": "29ABCDE1234F1Z5",
+    "currency": "INR",
+    "isOpen": true,
+    "createdAt": "2025-01-01T10:00:00Z"
+  }
+}
