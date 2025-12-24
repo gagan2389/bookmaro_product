@@ -6,7 +6,7 @@ import logo from '/logo/logo.svg';
 
 const NavBar: React.FC = () => {
     return (
-        <nav className="navbar navbar-light bg-light justify-content-between px-3">
+        <nav className="navbar navbar-light bg-light justify-content-between px-3 !fixed !top-0 !w-full !z-50 !shadow-sm">
             <img
                 src={logo}
                 alt="BookMaro Logo"
