@@ -1,33 +1,64 @@
 {
   "hero": {
     "title": "Popular Restaurants Near You",
-    "subtitle": "Discover the best dining experiences in your area. View menus and book your table in seconds."
+    "subtitle": "Discover the best dining experiences in your area. View menus and book your table in seconds.",
+    "location": "Indiranagar, Bengaluru"
   },
-  "restaurant": {
-    "id": "rest_001",
-    "name": "Spice Garden",
-    "description": "A modern multi-cuisine restaurant serving authentic Indian and continental dishes.",
-    "type": "Dine-In | Takeaway | Delivery",
-    "rating": 4.5,
-    "contact": {
-      "phone": "+91 9876543210",
-      "email": "contact@spicegarden.com"
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "Tee Cosy",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+      "rating": 4.8,
+      "priceRange": "$$",
+      "description": "Experience authentic flavors and exceptional dining in a warm, welcoming atmosphere",
+      "deliveryTime": "25-40 min",
+      "minOrder": "$3.99",
+      "cuisine": "Italian"
     },
-    "address": {
-      "street": "12th Cross Road",
-      "area": "Indiranagar",
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "pincode": "560038",
-      "country": "India"
+    {
+      "id": "2",
+      "name": "Spice Garden",
+      "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+      "rating": 4.6,
+      "priceRange": "$",
+      "description": "Authentic Indian cuisine with traditional spices and modern presentation",
+      "deliveryTime": "30-45 min",
+      "minOrder": "$2.99",
+      "cuisine": "Indian"
     },
-    "openingHours": {
-      "mondayToFriday": "10:00 AM - 11:00 PM",
-      "weekends": "9:00 AM - 12:00 AM"
+    {
+      "id": "3",
+      "name": "Ocean Breeze",
+      "image": "https://images.unsplash.com/photo-1537047902294-6228602d7fb8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+      "rating": 4.9,
+      "priceRange": "$$$",
+      "description": "Fresh seafood and coastal dining with ocean-to-table ingredients",
+      "deliveryTime": "35-50 min",
+      "minOrder": "$4.99",
+      "cuisine": "Seafood"
     },
-    "gstNumber": "29ABCDE1234F1Z5",
-    "currency": "INR",
-    "isOpen": true,
-    "createdAt": "2025-01-01T10:00:00Z"
-  }
+    {
+      "id": "5",
+      "name": "Prime Cut",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+      "rating": 4.8,
+      "priceRange": "$$$",
+      "description": "Premium steaks and fine dining in an elegant, sophisticated setting",
+      "deliveryTime": "45-60 min",
+      "minOrder": "$5.99",
+      "cuisine": "Steakhouse"
+    },
+    {
+      "id": "6",
+      "name": "BLVY Bistro",
+      "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+      "rating": 4.5,
+      "priceRange": "$$",
+      "description": "International cuisine blending flavors from around the world",
+      "deliveryTime": "30-40 min",
+      "minOrder": "$3.99",
+      "cuisine": "International"
+    }
+  ]
 }

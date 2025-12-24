@@ -1,0 +1,123 @@
+{
+    "homeFilters": [
+        {
+            "id": "all",
+            "label": "All",
+            "value": "all"
+        },
+        {
+            "id": "international",
+            "label": "International",
+            "value": "international"
+        },
+        {
+            "id": "indian",
+            "label": "Indian",
+            "value": "indian"
+        },
+        {
+            "id": "seafood",
+            "label": "Seafood",
+            "value": "seafood"
+        },
+        {
+            "id": "italian",
+            "label": "Italian",
+            "value": "italian"
+        },
+        {
+            "id": "steakhouse",
+            "label": "Steakhouse",
+            "value": "steakhouse"
+        }
+    ],
+    "menuFilters": {
+        "categories": [
+            {
+                "id": "all",
+                "label": "All",
+                "value": "all"
+            },
+            {
+                "id": "pizza",
+                "label": "Pizza",
+                "value": "pizza"
+            },
+            {
+                "id": "pasta",
+                "label": "Pasta",
+                "value": "pasta"
+            },
+            {
+                "id": "desserts",
+                "label": "Desserts",
+                "value": "desserts"
+            },
+            {
+                "id": "appetizers",
+                "label": "Appetizers",
+                "value": "appetizers"
+            },
+            {
+                "id": "mains",
+                "label": "Mains",
+                "value": "mains"
+            }
+        ],
+        "detailedFilters": {
+            "dietary": [
+                {
+                    "id": "veg",
+                    "label": "Veg Only",
+                    "color": "bg-green-500"
+                },
+                {
+                    "id": "egg",
+                    "label": "Egg",
+                    "color": "bg-yellow-500"
+                },
+                {
+                    "id": "non_veg",
+                    "label": "Non-Veg Only",
+                    "color": "bg-red-500"
+                },
+                {
+                    "id": "jain",
+                    "label": "Jain",
+                    "color": "bg-green-700"
+                }
+            ],
+            "tags": [
+                {
+                    "id": "bestseller",
+                    "label": "Bestseller",
+                    "color": "bg-orange-500"
+                },
+                {
+                    "id": "spicy",
+                    "label": "Spicy",
+                    "color": "bg-red-600"
+                },
+                {
+                    "id": "sweet",
+                    "label": "Sweet",
+                    "color": "bg-pink-500"
+                }
+            ],
+            "ratings": [
+                {
+                    "id": "3.5",
+                    "label": "3.5+ Stars"
+                },
+                {
+                    "id": "4.0",
+                    "label": "4+ Stars"
+                },
+                {
+                    "id": "4.5",
+                    "label": "4.5+ Stars"
+                }
+            ]
+        }
+    }
+}
