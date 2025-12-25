@@ -54,7 +54,7 @@ const RestaurantList: React.FC<RestaurantListProps> = ({ activeFilter }) => {
               </div>
               <div className="flex gap-3">
                 <button
-                  onClick={() => navigate(`/menu/${restaurant.id}`)}
+                  onClick={() => navigate(`/${restaurant.id}`)}
                   className="flex-1 bg-indigo-900 hover:bg-indigo-800 text-white font-semibold py-2.5 !rounded-xl transition-colors text-sm"
                 >
                   View Menu
