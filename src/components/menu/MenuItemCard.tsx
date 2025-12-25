@@ -4,7 +4,7 @@ interface MenuItem {
   id: number;
   name: string;
   description: string;
-
+  price: number;
   image?: string;
   category: string;
   isVeg: boolean;
@@ -41,6 +41,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({ item }) => {
           <h3 className="font-bold text-indigo-900 text-lg leading-tight">{item.name}</h3>
           <div className="flex items-center gap-1 bg-green-50 px-1.5 py-0.5 rounded ml-2 flex-shrink-0">
             <span className="font-bold text-gray-700 text-sm">{item.rating}</span>
+            <span className="text-gray-400 text-xs">({item.reviews})</span>
             <i className="bi bi-star-fill text-yellow-500 text-xs"></i>
           </div>
         </div>
@@ -71,6 +72,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({ item }) => {
                 className={`w-2 h-2 ${item.isVeg ? 'bg-green-600' : 'bg-red-500'} rounded-full`}
               ></div>
             </div>
+            <div className="font-bold text-lg text-indigo-900">₹{item.price}</div>
           </div>
         </div>
       </div>

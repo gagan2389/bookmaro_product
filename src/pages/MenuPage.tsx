@@ -33,6 +33,7 @@ const MenuPage = () => {
     {
       id: 101,
       name: 'Signature Spicy Pasta',
+      price: 350,
       description:
         'Fresh handmade pasta tossed in our secret spicy tomato sauce with basil and parmesan.',
 
@@ -47,6 +48,7 @@ const MenuPage = () => {
     {
       id: 102,
       name: 'Crispy Calamari',
+      price: 420,
       description: 'Tender lighty fried calamari rings served with lemon aioli and marinara sauce.',
 
       image:
@@ -60,6 +62,7 @@ const MenuPage = () => {
     {
       id: 103,
       name: 'Truffle Mushroom Risotto',
+      price: 450,
       description:
         'Creamy arborio rice with wild mushrooms, truffle oil, and aged parmesan cheese. Creamy arborio rice with wild mushrooms, truffle oil, and aged parmesan cheese. Creamy arborio rice with wild mushrooms, truffle oil, and aged parmesan cheese.',
 
@@ -74,6 +77,7 @@ const MenuPage = () => {
     {
       id: 104,
       name: 'Classic Tiramisu',
+      price: 280,
       description:
         'Layers of espresso-soaked ladyfingers and mascarpone cream, dusted with cocoa powder.',
 
@@ -88,6 +92,7 @@ const MenuPage = () => {
     {
       id: 105,
       name: 'Grilled Salmon',
+      price: 550,
       description:
         'Fresh Atlantic salmon fillet grilled to perfection, served with asparagus and lemon butter.',
 
@@ -100,6 +105,7 @@ const MenuPage = () => {
     {
       id: 106,
       name: 'Craft Lemonade',
+      price: 120,
       description: 'House-made lemonade with fresh lemons, mint leaves, and a touch of honey.',
 
       image:
