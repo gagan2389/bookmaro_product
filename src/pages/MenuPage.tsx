@@ -5,6 +5,8 @@ import MenuHero from '../components/menu/MenuHero';
 import MenuTabs from '../components/menu/MenuTabs';
 import { FilterList } from '../components/FilterList';
 import MenuItemCard from '../components/menu/MenuItemCard';
+import ReviewsList from '../components/menu/ReviewsList';
+import RestaurantInfo from '../components/menu/RestaurantInfo';
 
 const MenuPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -132,16 +134,33 @@ const MenuPage = () => {
         <div className="bg-white rounded-3xl shadow-lg border-b border-gray-100 p-2 md:p-6">
           <MenuTabs tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
         </div>
-        <FilterList
-          items={categories.map((cat) => ({ id: cat, label: cat, value: cat }))}
-          activeValue={activeCategory}
-          onSelect={setActiveCategory}
-        />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-          {filteredItems.map((item) => (
-            <MenuItemCard key={item.id} item={item} />
-          ))}
-        </div>
+
+        {activeTab === 'Menu' && (
+          <>
+            <FilterList
+              items={categories.map((cat) => ({ id: cat, label: cat, value: cat }))}
+              activeValue={activeCategory}
+              onSelect={setActiveCategory}
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+              {filteredItems.map((item) => (
+                <MenuItemCard key={item.id} item={item} />
+              ))}
+            </div>
+          </>
+        )}
+
+        {activeTab === 'Reviews' && (
+          <div className="mt-6">
+            <ReviewsList overallRating={restaurant.rating} totalReviews={3} />
+          </div>
+        )}
+
+        {activeTab === 'Info' && (
+          <div className="mt-6 flex justify-center">
+            <RestaurantInfo restaurant={restaurant} />
+          </div>
+        )}
       </div>
     </div>
   );

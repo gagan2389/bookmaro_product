@@ -13,7 +13,10 @@
       "description": "Experience authentic flavors and exceptional dining in a warm, welcoming atmosphere",
       "deliveryTime": "25-40 min",
       "minOrder": "₹250",
-      "cuisine": "Italian"
+      "cuisine": "Italian",
+      "address": "123 Pasta Lane, Flavor Town",
+      "phone": "(555) 123-4567",
+      "openingHours": "11:00 AM - 10:00 PM"
     },
     {
       "id": "2",
@@ -23,7 +26,10 @@
       "description": "Authentic Indian cuisine with traditional spices and modern presentation",
       "deliveryTime": "30-45 min",
       "minOrder": "₹200",
-      "cuisine": "Indian"
+      "cuisine": "Indian",
+      "address": "456 Curry Lane, Spice District",
+      "phone": "(555) 234-5678",
+      "openingHours": "12:00 PM - 9:30 PM"
     },
     {
       "id": "3",
@@ -33,7 +39,10 @@
       "description": "Fresh seafood and coastal dining with ocean-to-table ingredients",
       "deliveryTime": "35-50 min",
       "minOrder": "₹500",
-      "cuisine": "Seafood"
+      "cuisine": "Seafood",
+      "address": "789 Coastal Road, Bay Area",
+      "phone": "(555) 987-6543",
+      "openingHours": "12:00 PM - 11:00 PM"
     },
     {
       "id": "5",
@@ -43,7 +52,10 @@
       "description": "Premium steaks and fine dining in an elegant, sophisticated setting",
       "deliveryTime": "45-60 min",
       "minOrder": "₹600",
-      "cuisine": "Steakhouse"
+      "cuisine": "Steakhouse",
+      "address": "321 Grill Street, Meatpacking District",
+      "phone": "(555) 456-7890",
+      "openingHours": "04:00 PM - 11:00 PM"
     },
     {
       "id": "6",
@@ -53,7 +65,10 @@
       "description": "International cuisine blending flavors from around the world",
       "deliveryTime": "30-40 min",
       "minOrder": "₹250",
-      "cuisine": "International"
+      "cuisine": "International",
+      "address": "654 Global Ave, Fusion City",
+      "phone": "(555) 789-0123",
+      "openingHours": "08:00 AM - 10:00 PM"
     }
   ]
 }
