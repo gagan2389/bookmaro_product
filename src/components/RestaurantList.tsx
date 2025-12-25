@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import dummydata from '../dummydata.json';
 
 interface RestaurantListProps {
@@ -7,6 +8,7 @@ interface RestaurantListProps {
 }
 
 const RestaurantList: React.FC<RestaurantListProps> = ({ activeFilter }) => {
+    const navigate = useNavigate();
     const filteredRestaurants = dummydata.restaurants.filter(restaurant => {
         if (activeFilter === 'all') return true;
         const cuisine = restaurant.cuisine.toLowerCase();
@@ -48,12 +50,15 @@ const RestaurantList: React.FC<RestaurantListProps> = ({ activeFilter }) => {
                                         <span>{restaurant.minOrder}</span>
                                     </div>
                                 </div>
-                                <span className="bg-orange-50 text-orange-600 text-xs px-3 py-1 rounded-full font-medium">
+                                <span className="bg-indigo-50 text-indigo-900 text-xs px-3 py-1 rounded-full font-medium">
                                     {restaurant.cuisine}
                                 </span>
                             </div>
                             <div className="flex gap-3">
-                                <button className="flex-1 bg-indigo-900 hover:bg-indigo-800 text-white font-semibold py-2.5 !rounded-xl transition-colors text-sm">
+                                <button
+                                    onClick={() => navigate(`/menu/${restaurant.id}`)}
+                                    className="flex-1 bg-indigo-900 hover:bg-indigo-800 text-white font-semibold py-2.5 !rounded-xl transition-colors text-sm"
+                                >
                                     View Menu
                                 </button>
                                 <button className="flex-1 bg-white border border-gray-200 text-indigo-900 font-bold py-2.5 !rounded-xl hover:bg-gray-50 transition-colors text-sm">

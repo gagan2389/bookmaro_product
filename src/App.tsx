@@ -1,22 +1,35 @@
-import { useState } from 'react';
+
 import NavBar from './components/NavBar';
-import HeroSection from './components/HeroSection';
-import HomeFilters from './components/HomeFilters';
-import RestaurantList from './components/RestaurantList';
 import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import MenuPage from './pages/MenuPage';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
-function App() {
-  const [activeFilter, setActiveFilter] = useState('all');
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
-  return (
-    <>
-      <NavBar />
-      <HeroSection />
-      <HomeFilters activeFilter={activeFilter} onFilterChange={setActiveFilter} />
-      <RestaurantList activeFilter={activeFilter} />
-      <Footer />
-    </>
-  )
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
 
-export default App
+function App() {
+  return (
+    <>
+      <ScrollToTop />
+      <NavBar />
+      <div className="!md:mt-5 mt-15">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/menu/:id" element={<MenuPage />} />
+        </Routes>
+      </div>
+      <Footer />
+    </>
+  );
+}
+
+export default App;
