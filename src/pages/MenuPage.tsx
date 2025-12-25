@@ -3,7 +3,7 @@ import dummydata from '../dummydata.json';
 import { useState } from 'react';
 import MenuHero from '../components/menu/MenuHero';
 import MenuTabs from '../components/menu/MenuTabs';
-import MenuCategories from '../components/menu/MenuCategories';
+import { FilterList } from '../components/FilterList';
 import MenuItemCard from '../components/menu/MenuItemCard';
 
 const MenuPage = () => {
@@ -129,14 +129,14 @@ const MenuPage = () => {
     <div className="bg-gray-50 min-h-screen pb-20">
       <MenuHero restaurant={restaurant} />
       <div className="container mx-auto px-2 -mt-3 relative z-30">
-        <div className="bg-white rounded-t-3xl shadow-lg border-b border-gray-100 p-4 md:p-6 mb-6">
+        <div className="bg-white rounded-3xl shadow-lg border-b border-gray-100 p-2 md:p-6">
           <MenuTabs tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
-          <MenuCategories
-            categories={categories}
-            activeCategory={activeCategory}
-            onCategoryChange={setActiveCategory}
-          />
         </div>
+        <FilterList
+          items={categories.map((cat) => ({ id: cat, label: cat, value: cat }))}
+          activeValue={activeCategory}
+          onSelect={setActiveCategory}
+        />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {filteredItems.map((item) => (
             <MenuItemCard key={item.id} item={item} />
