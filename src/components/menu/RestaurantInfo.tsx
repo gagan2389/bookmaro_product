@@ -1,12 +1,11 @@
 import React from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
 interface RestaurantInfoProps {
   restaurant: {
+    id?: string;
     name: string;
     description: string;
-    cuisine: string;
-    deliveryTime: string;
-    minOrder: string;
     address?: string;
     phone?: string;
     openingHours?: string;
@@ -14,6 +13,9 @@ interface RestaurantInfoProps {
 }
 
 const RestaurantInfo: React.FC<RestaurantInfoProps> = ({ restaurant }) => {
+  const navigate = useNavigate();
+  const { id } = useParams<{ id: string }>();
+
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 min-w-3xl">
       <div className="space-y-5">
@@ -57,7 +59,10 @@ const RestaurantInfo: React.FC<RestaurantInfoProps> = ({ restaurant }) => {
         <p className="text-gray-600 text-sm leading-relaxed">{restaurant.description}</p>
       </div>
 
-      <button className="w-full bg-indigo-900 text-white font-semibold py-3 rounded-xl hover:bg-indigo-800 transition-colors shadow-lg shadow-indigo-200/50">
+      <button
+        onClick={() => navigate(`/${id}/book`)}
+        className="w-full bg-indigo-900 text-white font-semibold py-3 rounded-xl hover:bg-indigo-800 transition-colors shadow-lg shadow-indigo-200/50"
+      >
         Book a Table
       </button>
     </div>

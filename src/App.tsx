@@ -8,6 +8,9 @@ import RestaurantMenuTab from './components/menu/RestaurantMenuTab';
 import RestaurantReviewsTab from './components/menu/RestaurantReviewsTab';
 import RestaurantInfoTab from './components/menu/RestaurantInfoTab';
 
+import BookingPage from './pages/BookingPage.tsx';
+import BookingConfirmationPage from './pages/BookingConfirmationPage.tsx';
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -32,6 +35,8 @@ function App() {
             <Route path="reviews" element={<RestaurantReviewsTab />} />
             <Route path="info" element={<RestaurantInfoTab />} />
           </Route>
+          <Route path="/:id/book" element={<BookingPage />} />
+          <Route path="/:id/booking-confirmed" element={<BookingConfirmationPage />} />
         </Routes>
       </div>
       <Footer />

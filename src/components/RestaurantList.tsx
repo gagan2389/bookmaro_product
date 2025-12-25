@@ -59,7 +59,10 @@ const RestaurantList: React.FC<RestaurantListProps> = ({ activeFilter }) => {
                 >
                   View Menu
                 </button>
-                <button className="flex-1 bg-white border border-gray-200 text-indigo-900 font-bold py-2.5 !rounded-xl hover:bg-gray-50 transition-colors text-sm">
+                <button
+                  onClick={() => navigate(`/${restaurant.id}/book`)}
+                  className="flex-1 bg-white border border-gray-200 text-indigo-900 font-bold py-2.5 !rounded-xl hover:bg-gray-50 transition-colors text-sm"
+                >
                   Book Table
                 </button>
               </div>

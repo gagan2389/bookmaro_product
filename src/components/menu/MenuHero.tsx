@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 interface MenuHeroProps {
   restaurant: {
@@ -16,6 +16,8 @@ interface MenuHeroProps {
 }
 
 const MenuHero: React.FC<MenuHeroProps> = ({ restaurant }) => {
+      const navigate = useNavigate();
+
   return (
     <div className="relative h-[300px] md:h-[400px]">
       <div className="absolute inset-0 bg-black/40 z-10"></div>
@@ -46,6 +48,14 @@ const MenuHero: React.FC<MenuHeroProps> = ({ restaurant }) => {
               <i className="bi bi-clock"></i> {restaurant.deliveryTime}
             </span>
           </div>
+          {/* <div className="w-1/5 flex items-center gap-2 mt-2">
+            <button
+                  onClick={() => navigate(`/${restaurant.id}/book`)}
+                  className="w-full flex-1 bg-white border border-gray-200 text-indigo-900 font-bold py-2.5 !rounded-xl hover:bg-gray-50 transition-colors text-sm"
+                >
+                  Book Table
+                </button>
+          </div> */}
         </div>
       </div>
     </div>
