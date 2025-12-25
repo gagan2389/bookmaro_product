@@ -16,7 +16,7 @@ interface MenuHeroProps {
 }
 
 const MenuHero: React.FC<MenuHeroProps> = ({ restaurant }) => {
-      const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className="relative h-[300px] md:h-[400px]">

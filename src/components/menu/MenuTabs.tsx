@@ -28,14 +28,15 @@ const MenuTabs: React.FC<MenuTabsProps> = ({ tabs }) => {
           <button
             key={tab}
             onClick={() => handleTabClick(tab)}
-            className={`text-base font-medium whitespace-nowrap pb-1 border-b-2 transition-colors ${isActive
-              ? 'border-indigo-900 text-indigo-900'
-              : 'border-transparent text-gray-500 hover:text-gray-800'
-              }`}
+            className={`text-base font-medium whitespace-nowrap pb-1 border-b-2 transition-colors ${
+              isActive
+                ? 'border-indigo-900 text-indigo-900'
+                : 'border-transparent text-gray-500 hover:text-gray-800'
+            }`}
           >
             {tab}
           </button>
-        )
+        );
       })}
     </div>
   );

@@ -20,8 +20,9 @@ const ReviewsList: React.FC<ReviewsListProps> = ({ overallRating, totalReviews, 
     return Array.from({ length: 5 }).map((_, index) => (
       <i
         key={index}
-        className={`bi ${index < rating ? 'bi-star-fill text-orange-500' : 'bi-star text-custom-gray'
-          } text-sm`}
+        className={`bi ${
+          index < rating ? 'bi-star-fill text-orange-500' : 'bi-star text-custom-gray'
+        } text-sm`}
       ></i>
     ));
   };
