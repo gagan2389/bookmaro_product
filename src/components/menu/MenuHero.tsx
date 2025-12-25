@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 interface MenuHeroProps {
   restaurant: {
@@ -16,7 +16,6 @@ interface MenuHeroProps {
 }
 
 const MenuHero: React.FC<MenuHeroProps> = ({ restaurant }) => {
-  const navigate = useNavigate();
 
   return (
     <div className="relative h-[300px] md:h-[400px]">
