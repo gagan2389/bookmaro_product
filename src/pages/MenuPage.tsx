@@ -31,94 +31,7 @@ const MenuPage = () => {
   }
   const categories = ['All', 'Bestsellers', 'Appetizers', 'Mains', 'Desserts', 'Beverages'];
   const tabs = ['Menu', 'Reviews', 'Info'];
-  const menuItems = [
-    {
-      id: 101,
-      name: 'Signature Spicy Pasta',
-      price: 350,
-      description:
-        'Fresh handmade pasta tossed in our secret spicy tomato sauce with basil and parmesan.',
-
-      image:
-        'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
-      category: 'Mains',
-      isVeg: true,
-      isBestseller: true,
-      rating: 4.8,
-      reviews: 124,
-    },
-    {
-      id: 102,
-      name: 'Crispy Calamari',
-      price: 420,
-      description: 'Tender lighty fried calamari rings served with lemon aioli and marinara sauce.',
-
-      image:
-        'https://images.unsplash.com/photo-1604909052743-94e838986d24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
-      category: 'Appetizers',
-      isVeg: false,
-      isBestseller: false,
-      rating: 4.5,
-      reviews: 89,
-    },
-    {
-      id: 103,
-      name: 'Truffle Mushroom Risotto',
-      price: 450,
-      description:
-        'Creamy arborio rice with wild mushrooms, truffle oil, and aged parmesan cheese. Creamy arborio rice with wild mushrooms, truffle oil, and aged parmesan cheese. Creamy arborio rice with wild mushrooms, truffle oil, and aged parmesan cheese.',
-
-      image:
-        'https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
-      category: 'Mains',
-      isVeg: true,
-      isBestseller: true,
-      rating: 4.9,
-      reviews: 210,
-    },
-    {
-      id: 104,
-      name: 'Classic Tiramisu',
-      price: 280,
-      description:
-        'Layers of espresso-soaked ladyfingers and mascarpone cream, dusted with cocoa powder.',
-
-      image:
-        'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
-      category: 'Desserts',
-      isVeg: true,
-      isBestseller: false,
-      rating: 4.7,
-      reviews: 156,
-    },
-    {
-      id: 105,
-      name: 'Grilled Salmon',
-      price: 550,
-      description:
-        'Fresh Atlantic salmon fillet grilled to perfection, served with asparagus and lemon butter.',
-
-      category: 'Mains',
-      isVeg: false,
-      isBestseller: false,
-      rating: 4.6,
-      reviews: 78,
-    },
-    {
-      id: 106,
-      name: 'Craft Lemonade',
-      price: 120,
-      description: 'House-made lemonade with fresh lemons, mint leaves, and a touch of honey.',
-
-      image:
-        'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
-      category: 'Beverages',
-      isVeg: true,
-      isBestseller: false,
-      rating: 4.4,
-      reviews: 45,
-    },
-  ];
+  const menuItems = dummydata.menuItems;
 
   const filteredItems =
     activeCategory === 'All'
@@ -152,7 +65,11 @@ const MenuPage = () => {
 
         {activeTab === 'Reviews' && (
           <div className="mt-6">
-            <ReviewsList overallRating={restaurant.rating} totalReviews={3} />
+            <ReviewsList
+              reviews={dummydata.reviews}
+              overallRating={restaurant.rating}
+              totalReviews={dummydata.reviews.length}
+            />
           </div>
         )}
 

@@ -12,43 +12,16 @@ interface Review {
 interface ReviewsListProps {
   overallRating: number;
   totalReviews: number;
+  reviews: Review[];
 }
 
-const mockReviews: Review[] = [
-  {
-    id: 1,
-    author: 'John D.',
-    initial: 'J',
-    date: '2 days ago',
-    rating: 5,
-    text: 'Amazing food and great atmosphere! The service was impeccable.',
-  },
-  {
-    id: 2,
-    author: 'Sarah M.',
-    initial: 'S',
-    date: '1 week ago',
-    rating: 5,
-    text: 'Really enjoyed my meal here. Will definitely come back.',
-  },
-  {
-    id: 3,
-    author: 'Mike R.',
-    initial: 'M',
-    date: '2 weeks ago',
-    rating: 5,
-    text: 'Best restaurant in town! Highly recommend the signature dishes.',
-  },
-];
-
-const ReviewsList: React.FC<ReviewsListProps> = ({ overallRating, totalReviews }) => {
+const ReviewsList: React.FC<ReviewsListProps> = ({ overallRating, totalReviews, reviews }) => {
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }).map((_, index) => (
       <i
         key={index}
-        className={`bi ${
-          index < rating ? 'bi-star-fill text-orange-500' : 'bi-star text-custom-gray'
-        } text-sm`}
+        className={`bi ${index < rating ? 'bi-star-fill text-orange-500' : 'bi-star text-custom-gray'
+          } text-sm`}
       ></i>
     ));
   };
@@ -68,7 +41,7 @@ const ReviewsList: React.FC<ReviewsListProps> = ({ overallRating, totalReviews }
       </div>
 
       <div className="space-y-4">
-        {mockReviews.map((review) => (
+        {reviews.map((review) => (
           <div
             key={review.id}
             className="border border-gray-100 rounded-2xl p-6 flex flex-col gap-3 hover:shadow-md transition-shadow duration-200"
