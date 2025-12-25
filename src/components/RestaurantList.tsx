@@ -35,10 +35,8 @@ const RestaurantList: React.FC<RestaurantListProps> = ({ activeFilter }) => {
               </div>
             </div>
             <div className="p-4">
-              <div className="flex justify-between items-start mb-2">
-                <h3 className="text-xl font-bold text-indigo-900">{restaurant.name}</h3>
-                <span className="text-gray-400 font-medium text-sm">{restaurant.priceRange}</span>
-              </div>
+              <h3 className="text-xl font-bold text-indigo-900 mb-2">{restaurant.name}</h3>
+
               <p className="text-gray-500 text-sm mb-4 line-clamp-2">{restaurant.description}</p>
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-4 text-xs text-gray-500">

@@ -10,10 +10,9 @@
       "name": "Tee Cosy",
       "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
       "rating": 4.8,
-      "priceRange": "$$",
       "description": "Experience authentic flavors and exceptional dining in a warm, welcoming atmosphere",
       "deliveryTime": "25-40 min",
-      "minOrder": "$3.99",
+      "minOrder": "₹250",
       "cuisine": "Italian"
     },
     {
@@ -21,10 +20,9 @@
       "name": "Spice Garden",
       "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
       "rating": 4.6,
-      "priceRange": "$",
       "description": "Authentic Indian cuisine with traditional spices and modern presentation",
       "deliveryTime": "30-45 min",
-      "minOrder": "$2.99",
+      "minOrder": "₹200",
       "cuisine": "Indian"
     },
     {
@@ -32,10 +30,9 @@
       "name": "Ocean Breeze",
       "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
       "rating": 4.9,
-      "priceRange": "$$$",
       "description": "Fresh seafood and coastal dining with ocean-to-table ingredients",
       "deliveryTime": "35-50 min",
-      "minOrder": "$4.99",
+      "minOrder": "₹500",
       "cuisine": "Seafood"
     },
     {
@@ -43,10 +40,9 @@
       "name": "Prime Cut",
       "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
       "rating": 4.8,
-      "priceRange": "$$$",
       "description": "Premium steaks and fine dining in an elegant, sophisticated setting",
       "deliveryTime": "45-60 min",
-      "minOrder": "$5.99",
+      "minOrder": "₹600",
       "cuisine": "Steakhouse"
     },
     {
@@ -54,10 +50,9 @@
       "name": "BLVY Bistro",
       "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
       "rating": 4.5,
-      "priceRange": "$$",
       "description": "International cuisine blending flavors from around the world",
       "deliveryTime": "30-40 min",
-      "minOrder": "$3.99",
+      "minOrder": "₹250",
       "cuisine": "International"
     }
   ]

@@ -35,7 +35,7 @@ const MenuPage = () => {
       name: 'Signature Spicy Pasta',
       description:
         'Fresh handmade pasta tossed in our secret spicy tomato sauce with basil and parmesan.',
-      price: '$14.99',
+
       image:
         'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
       category: 'Mains',
@@ -48,7 +48,7 @@ const MenuPage = () => {
       id: 102,
       name: 'Crispy Calamari',
       description: 'Tender lighty fried calamari rings served with lemon aioli and marinara sauce.',
-      price: '$12.50',
+
       image:
         'https://images.unsplash.com/photo-1604909052743-94e838986d24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
       category: 'Appetizers',
@@ -62,7 +62,7 @@ const MenuPage = () => {
       name: 'Truffle Mushroom Risotto',
       description:
         'Creamy arborio rice with wild mushrooms, truffle oil, and aged parmesan cheese. Creamy arborio rice with wild mushrooms, truffle oil, and aged parmesan cheese. Creamy arborio rice with wild mushrooms, truffle oil, and aged parmesan cheese.',
-      price: '$18.00',
+
       image:
         'https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
       category: 'Mains',
@@ -76,7 +76,7 @@ const MenuPage = () => {
       name: 'Classic Tiramisu',
       description:
         'Layers of espresso-soaked ladyfingers and mascarpone cream, dusted with cocoa powder.',
-      price: '$8.99',
+
       image:
         'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
       category: 'Desserts',
@@ -90,7 +90,7 @@ const MenuPage = () => {
       name: 'Grilled Salmon',
       description:
         'Fresh Atlantic salmon fillet grilled to perfection, served with asparagus and lemon butter.',
-      price: '$22.00',
+
       category: 'Mains',
       isVeg: false,
       isBestseller: false,
@@ -101,7 +101,7 @@ const MenuPage = () => {
       id: 106,
       name: 'Craft Lemonade',
       description: 'House-made lemonade with fresh lemons, mint leaves, and a touch of honey.',
-      price: '$4.50',
+
       image:
         'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
       category: 'Beverages',

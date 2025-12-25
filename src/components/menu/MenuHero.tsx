@@ -7,7 +7,7 @@ interface MenuHeroProps {
     name: string;
     image: string;
     rating: number;
-    priceRange: string;
+
     description: string;
     deliveryTime: string;
     minOrder: string;
@@ -41,9 +41,7 @@ const MenuHero: React.FC<MenuHeroProps> = ({ restaurant }) => {
             <span className="flex items-center gap-1">
               <i className="bi bi-dot"></i> {restaurant.cuisine}
             </span>
-            <span className="flex items-center gap-1">
-              <i className="bi bi-dot"></i> {restaurant.priceRange}
-            </span>
+
             <span className="flex items-center gap-1 text-gray-200">
               <i className="bi bi-clock"></i> {restaurant.deliveryTime}
             </span>
