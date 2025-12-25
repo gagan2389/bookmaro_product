@@ -17,7 +17,7 @@ const RestaurantInfo: React.FC<RestaurantInfoProps> = ({ restaurant }) => {
   const { id } = useParams<{ id: string }>();
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 min-w-3xl">
+    <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 w-full max-w-2xl">
       <div className="space-y-5">
         <div className="flex items-center gap-4">
           <div className="w-10 h-10 rounded-full bg-indigo-50 flex items-center justify-center flex-shrink-0">
