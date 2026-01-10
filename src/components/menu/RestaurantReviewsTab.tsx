@@ -1,6 +1,6 @@
 import React from 'react';
 import ReviewsList from './ReviewsList';
-import dummydata from '../../dummydata.json';
+import restaurantData from '../../data/restaurantData.json';
 import { useOutletContext } from 'react-router-dom';
 
 const RestaurantReviewsTab: React.FC = () => {
@@ -8,9 +8,9 @@ const RestaurantReviewsTab: React.FC = () => {
   return (
     <div className="mt-6">
       <ReviewsList
-        reviews={dummydata.reviews}
+        reviews={restaurantData.reviews}
         overallRating={restaurant.rating}
-        totalReviews={dummydata.reviews.length}
+        totalReviews={restaurantData.reviews.length}
       />
     </div>
   );

@@ -1,12 +1,12 @@
 import { FilterList } from '../FilterList';
 import MenuItemCard from './MenuItemCard';
 import { useState } from 'react';
-import dummydata from '../../dummydata.json';
+import restaurantData from '../../data/restaurantData.json';
 
 const RestaurantMenuTab = () => {
   const [activeCategory, setActiveCategory] = useState('All');
   const categories = ['All', 'Bestsellers', 'Appetizers', 'Mains', 'Desserts', 'Beverages'];
-  const menuItems = dummydata.menuItems;
+  const menuItems = restaurantData.menu;
 
   const filteredItems =
     activeCategory === 'All'
